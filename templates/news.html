@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> News Portal</title>
+    <style>
+    body{
+        background: white;
+        color:black;
+
+    }
+    h1{
+        border:2px solid rebeccapurple;
+    }
+</style>
+
+    <link rel="stylesheet" href="{% static "css/demo.css" %}">
+</head>
+
+<body>
+<h1 align="center">{{ head_msg }}</h1>
+<ul>
+    <li> <h3>{{ sub_msg1 }}</h3></li>
+    <li> <h3>{{ sub_msg2 }}</h3></li>
+    <li> <h3>{{ sub_msg3 }}</h3></li>
+</ul>
+<img src="{% static "parliament.jpg"%}" alt="parliament" ><br>
+
+
+
+</body>
+</html>
